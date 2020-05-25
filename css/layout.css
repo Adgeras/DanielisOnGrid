@@ -59,6 +59,13 @@
     margin-left: 0;
 }
 
+.left {
+    text-align: left;
+}
+.right {
+    text-align: right;
+}
+
 @media (max-width: 1500px) {
     .container > .row {
         width: 1300px;
