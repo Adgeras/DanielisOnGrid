@@ -21,7 +21,7 @@
     display: inline-block;
     width: 1400px;
     margin: 5px calc(50% - 700px);
-    background-color:white;
+    /* background-color: black; */
     text-align: center;
 }
 
@@ -53,11 +53,25 @@
     display: inline-block;
     float: left;
     margin-left: var(--gap);
-    background-color:aqua;
+    /* background-color:aqua; */
 }
 .container > .row > *:first-child {
     margin-left: 0;
 }
+
+/***************************************
+********  VIRŠUJE BAIGTA SU 12 COLUM GRIDU
+*****************************************/
+footer,
+footer > .container > .row.col-12 p {
+    background-color: black;
+    color: rgb(153, 151, 151);
+    font-size: 10px;
+    line-height: 12px;
+}
+
+
+
 
 .left {
     text-align: left;
