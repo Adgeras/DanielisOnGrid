@@ -1,0 +1,11 @@
+.bckg-main-color {
+    background-color: var(--main-color);
+}
+
+.bckg-secondary-color {
+    background-color: var(--secondary-color);
+}
+
+.bckg-third-color{
+    background-color: black;
+}
