@@ -65,7 +65,19 @@
 /***************************************
 ********  VIRŠUJE BAIGTA SU 12 COLUM GRIDU
 *****************************************/
+/*********** ABOUT ME DALIS *************/
+main {
+    height: 100vh;
+}
+.aboutMe > .row {
+    height: 600px;
+    margin-top: calc(50vh - 300px);
 
+}
+
+img {
+    height: 550px;
+}
 
 
 
