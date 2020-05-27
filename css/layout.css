@@ -38,6 +38,9 @@
 .container > .row > .col-11 { width: var(--w11);}
 .container > .row > .col-12 { width: var(--w12);}
 
+
+
+
 .container > .row > .col-1,
 .container > .row > .col-2,
 .container > .row > .col-3,
@@ -62,6 +65,10 @@
 /***************************************
 ********  VIRŠUJE BAIGTA SU 12 COLUM GRIDU
 *****************************************/
+
+
+
+
 footer,
 footer > .container > .row.col-12 p {
     color:#707C7D;
@@ -101,8 +108,24 @@ footer > .container > .row.col-12 p {
 @media (max-width: 960px) {
     .container > .row {
         width: 750px;
-        margin: 5px calc(50% - 375px);
+        margin: 0 calc( 50% - 375px);
+        /* margin-left: 0; */
         }
+        .container > .row > .col-1-sm { width: var(--w1);}
+        .container > .row > .col-2-sm { width: var(--w2);}
+        .container > .row > .col-3-sm { width: var(--w3);}
+        .container > .row > .col-4-sm { width: var(--w4);}
+        .container > .row > .col-5-sm { width: var(--w5);}
+        .container > .row > .col-6-sm { width: var(--w6);}
+        .container > .row > .col-7-sm { width: var(--w7);}
+        .container > .row > .col-8-sm { width: var(--w8);}
+        .container > .row > .col-9-sm { width: var(--w9);}
+        .container > .row > .col-10-sm { width: var(--w10);}
+        .container > .row > .col-11-sm { width: var(--w11);}
+        .container > .row > .col-12-sm { width: var(--w12);
+        margin-left: 0;}
+       
+
 }
 /*************  ROOT GAP REDUCING ****/
 /*************************************/
@@ -115,7 +138,7 @@ footer > .container > .row.col-12 p {
         margin: 5px calc(50% - 275px);
         }
 }
-@media (max-width: 550px) {
+@media (max-width: 600px) {
     .container > .row {
         width: 350px;
         margin: 5px calc(50% - 175px);
