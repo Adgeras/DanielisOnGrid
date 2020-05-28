@@ -1,0 +1,42 @@
+.progress-bar {
+    margin-top: 25px;
+    padding: 10px 0;
+    width: 100%;
+}
+.progress-bar > .bar {
+    width: 100%;
+    border: inset 0 0 0 0.5;
+    background-color:grey;
+    color: white;
+    font-size: 18px;
+    line-height: 25px;
+    height: 25px;
+    border-radius: 10px;
+}
+.progress-bar > .bar > .progress{
+    height: 25px;
+    background-color: black;
+    border-radius: 10px;
+    animation: progress-bar;
+    animation-duration: 5s;
+}
+
+
+.progress-bar > .bar > .progress> .label{
+    display: inline-block;
+    float: left;
+    margin-left: 10px;
+    
+}
+.progress-bar > .bar > .progress >.value{
+    display: inline-block;
+    float: right;
+    margin-right: 10px;
+}
+
+@keyframes progress-bar {
+    0% {width: 30%;}
+    100% {width: 80%;}
+}
+
+
