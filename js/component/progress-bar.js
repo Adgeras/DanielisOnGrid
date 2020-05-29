@@ -9,16 +9,17 @@ function renderProgressBar (selector, data) {
     }
 
     //logika:
-    console.log(selector);
-    console.log(data);
+    // console.log(selector);
+    // console.log(data);
     
     let HTML = '';
     for (let i = 0; i < data.length; i++) {
         const skill = data[i];
         HTML += `
-            <div class="progress-bar" data-animated="false">
+            <div class="progress-bar" data-animated="false"
+            data-value="${skill.value}%">
                 <div class="bar">
-                    <div style="width: ${skill.value}%;" class="progress">
+                    <div class="progress" style="width: 0%" >
                         <div class="label">${skill.title}</div>
                         <div class="value">${skill.value}%</div>
                     </div>

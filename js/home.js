@@ -14,14 +14,16 @@ window.addEventListener('scroll', () => {
     const windowBottomHeight = window.scrollY + window.innerHeight;
 
     for (let i = 0; i < progressBars.length; i++) {            
-        const pg = progressBars[i];
+        const pg = progressBars[i];   
+        const progress = pg.querySelector('.progress'); 
         const pgBottomHeight = pg.offsetTop + pg.offsetHeight;
         
-        console.log(pgBottomHeight, windowBottomHeight);
-        if (pgBottomHeight < windowBottomHeight) {
+        if (pgBottomHeight < windowBottomHeight  &&
+            pg.dataset.animated === 'false') {
             pg.dataset.animated = 'true';
-        } 
-        
+            progress.style.width = pg.dataset.value;
+            
+        }   
     }
 });
 

@@ -21,8 +21,7 @@
     background-color:black;
     color:white;
     border-radius: 8px;
-    animation: progress-bar;
-    animation-duration: 5s;
+    transition: all 3s;
 }
 
 
@@ -38,9 +37,9 @@
     margin-right: 10px;
 }
 
-@keyframes progress-bar {
+/* @keyframes progress-bar {
     0% {width: 30%;}
     100% {width: skill[value];}
-}
+} */
 
 
