@@ -40,7 +40,7 @@
 
 @keyframes progress-bar {
     0% {width: 30%;}
-    100% {width: 80%;}
+    100% {width: skill[value];}
 }
 
 

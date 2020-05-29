@@ -1,4 +1,4 @@
-/*for progress bars section */
+/*skills for progress bars */
 
 const skills = [
     { 
