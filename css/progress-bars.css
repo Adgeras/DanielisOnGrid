@@ -1,22 +1,26 @@
 .progress-bar {
+    display: inline-block;
     margin-top: 25px;
     padding: 10px 0;
     width: 100%;
+    
 }
 .progress-bar > .bar {
+    display: inline-block;
     width: 100%;
-    border: inset 0 0 0 0.5;
-    background-color:grey;
-    color: white;
+    background-color:white;
+    box-shadow: inset 0 3px 10px #797777;
     font-size: 18px;
     line-height: 25px;
     height: 25px;
-    border-radius: 10px;
+    border-radius: 8px;
 }
 .progress-bar > .bar > .progress{
+    display: inline-block;
     height: 25px;
-    background-color: black;
-    border-radius: 10px;
+    background-color:black;
+    color:white;
+    border-radius: 8px;
     animation: progress-bar;
     animation-duration: 5s;
 }

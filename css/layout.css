@@ -66,15 +66,24 @@
 ********  VIRŠUJE BAIGTA SU 12 COLUM GRIDU
 *****************************************/
 /*********** ABOUT ME DALIS *************/
-main {height: 100vh;}
+main{
+    display: inline-block;
+    box-sizing: border-box;
+    min-height: 100vh;
+    /* padding: 10px; */
+}
 
 .aboutMe > .row {
-    height: 600px;
-    margin-top: calc(50vh - 300px);
+    display: inline-block;
+    height: 100%;
+    padding: 20px;
 }
 .aboutMeR > .col-5 img {
     height: 550px;
     margin: 0 calc(50% - 235px);
+}
+.aboutMeR > .col-7.left {
+    height: 100%;
 }
 .aboutMe h1 {
     font-family: Arial, Helvetica, sans-serif;
@@ -85,12 +94,14 @@ main {height: 100vh;}
     margin-top: 10px;
 }
 .aboutMe p{
+    display: inline-block;
     font-size: 18px;
     line-height: 22px;
     color: grey;
 }
 
 .aboutMe p:first-of-type{
+    display: inline-block;
     padding: 0 0 10px;
 }
 .col-7 span{
