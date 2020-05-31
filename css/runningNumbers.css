@@ -1,0 +1,21 @@
+#runnNumbPlace .col-3{
+    padding: 100px 0;
+}
+
+#runnNumbPlace .col-3 i{
+    font-size: 30px;
+    color: black;
+    margin-bottom: 15px;
+}
+
+#runnNumbPlace .col-3 h3{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 19px;
+}
+#runnNumbPlace .col-3 p{
+    font-size: 20px;
+    font-weight: bold;
+    color: gray;
+    margin-bottom: 30px;
+}

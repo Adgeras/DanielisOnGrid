@@ -1,4 +1,6 @@
-const runningNumbers = [
+/*DATA FOR RUNNING NUMBERS SECTION */
+
+const runningNumbersData = [
 {
     icon: 'users' ,
     label: 'Happy customer',
@@ -20,4 +22,5 @@ const runningNumbers = [
     number: 780
 }   
 ];
-export default runningNumbers;
+
+export default runningNumbersData;
