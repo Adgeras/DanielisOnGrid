@@ -110,6 +110,40 @@ main{
     color: rgb(70, 67, 67);
     font-weight: bold;
 }
+.aboutMeR > .col-7 > .button {
+    margin-top: 50px;
+      
+}
+
+.aboutMeR > .col-7 > .button > .cv {
+    background-color: black;
+    color: white;
+    padding: 10px 30px;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    
+
+}
+.aboutMeR > .col-7 > .button > .contact {
+    background-color:white;
+    color: black;
+    padding: 10px  30px;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.aboutMeR > .col-7 > .button > .cv:hover {
+    background-color: white;
+    color: black;
+}
+.aboutMeR > .col-7 > .button > .contact:hover {
+    background-color: black;
+    color: white;
+}
+
 
 
 footer,
