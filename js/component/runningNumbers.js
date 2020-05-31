@@ -7,7 +7,7 @@ function renderRunningNumbers (selector, data) {
     for (let i = 0; i < data.length; i++) {
         const icon = data[i].icon
         const label = data[i].label
-        const number = data[i].number
+        //const number = data[i].number
         HTML += `
             <div class="col-3 col-12-sm">
                 <i class="fa fa-${icon}" aria-hidden="true"></i>
@@ -33,14 +33,16 @@ function renderRunningNumbers (selector, data) {
         console.log(animNumPlace.length) // ilgis geras
         for (let i = 0; i <= animNumPlace.length; i++) {
             var counter = 0;
-            const number = data[i].number // sita pagauna 
-            console.log(number);
+            const skaicius = data[i].number // sita pagauna 
+            console.log(animNumPlace[i]);
+            console.log('Reiksme iki kurios turi suktis = ' + skaicius);
+            
                                                
             const timer = setInterval(() => {
                 counter++;
-                animNumPlace[i].innerText = counter; 
+                animNumPlace[i].innerText = Math.floor(counter / totalSteps * skaicius);  
                 //console.log(animNumPlace[i]);
-                if (counter >= number) {
+                if (counter >= totalSteps) {
                     clearInterval(timer);
                 }
             }, refreshTime); 
