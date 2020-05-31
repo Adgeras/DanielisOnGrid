@@ -2,7 +2,7 @@
 
 function renderProgressBar (selector, data) {
     // validacija
-    const DOM = document.querySelector(selector);
+    const DOM = document.querySelector(selector); //const progressBarsSelector = '#skills';
        
     if (!DOM) {
         throw 'ERROR: could not find element to render new content.'
@@ -82,12 +82,12 @@ function animateProgressBars(progressBarsSelector){
         const totalSteps = time / refreshTime;
         let step = 0;
 
-        const timer = setInterval(() => {
+        const timer = setInterval( () => {
             step++;
             element.innerText = Math.round(step / totalSteps * number)+`%`;
             if (step >= totalSteps) {
                 clearInterval(timer);
-            }
+             }
         }, refreshTime);       
     }
 }
