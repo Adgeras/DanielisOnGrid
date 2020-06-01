@@ -23,10 +23,10 @@ function renderRunningNumbers (selector, data) {
     // paduodant jai elementa (jo vieta) ir jo dataset reiksme "value"
             
     function animateNumber(selectors, data) {
-        const time = 2000;
-        const fps = 30;
-        const refreshTime = 1000 / fps; //laikas milisekundem per kiek turi atsinaujint
-        const totalSteps = time / refreshTime; // kiek viso duotame laike žingsnių
+        const speed = 200;
+        //const fps = 30;
+        //const refreshTime = 1000 / fps; //laikas milisekundem per kiek turi atsinaujint
+        //const totalSteps = time / refreshTime; // kiek viso duotame laike žingsnių
         
         var animNumPlace = placeForRunningNumbers.querySelectorAll('.col-3 >.number ');
         console.log(animNumPlace); // vieta pagauna 
@@ -34,18 +34,26 @@ function renderRunningNumbers (selector, data) {
         for (let i = 0; i <= animNumPlace.length; i++) {
             var counter = 0;
             const skaicius = data[i].number // sita pagauna 
-            console.log(animNumPlace[i]);
-            console.log('Reiksme iki kurios turi suktis = ' + skaicius);
+            const inc = skaicius / speed;
+            console.log(inc);            
+            //console.log(animNumPlace[i]);
+            //console.log('Reiksme iki kurios turi suktis = ' + skaicius);
             
-                                               
-            const timer = setInterval(() => {
-                counter++;
-                animNumPlace[i].innerText = Math.floor(counter / totalSteps * skaicius);  
-                //console.log(animNumPlace[i]);
-                if (counter >= totalSteps) {
-                    clearInterval(timer);
-                }
-            }, refreshTime); 
+            
+
+
+
+
+
+
+            // const timer = setInterval(() => {
+            //     counter += inc;
+            //     animNumPlace[i].innerText = Math.ceil(counter);  
+            //     //console.log(animNumPlace[i]);
+            //     if (counter >= skaicius) {
+            //         clearInterval(timer);
+            //     }
+            // }, refreshTime); 
         }    
             return;                
     }
