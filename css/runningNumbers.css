@@ -19,3 +19,8 @@
     color: gray;
     margin-bottom: 30px;
 }
+@media (max-width: 960px) {
+        #runnNumbPlace .col-3{
+        padding: 10px;
+        }
+}
