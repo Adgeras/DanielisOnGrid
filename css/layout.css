@@ -21,6 +21,7 @@
     display: inline-block;
     width: 1400px;
     margin: 5px calc(50% - 700px);
+    
     /* background-color: black; */
     text-align: center;
 }
@@ -66,6 +67,18 @@
 ********  VIRŠUJE BAIGTA SU 12 COLUM GRIDU
 *****************************************/
 /*********** ABOUT ME DALIS *************/
+.container.aboutMe {
+    display: inline-block;
+    min-height: 100vh;
+    width: 1400px;
+    margin-left: calc(50% - 700px);
+    /* text-align: center; */
+}
+.aboutMe > .aboutMeR {
+    margin-top: calc(50vh - 300px);
+}
+
+
 main{
     display: inline-block;
     box-sizing: border-box;
